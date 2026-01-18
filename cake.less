@@ -65,6 +65,38 @@
   top:45%; left:0;
 }
 
+/* ============================================== Age Numbers
+*/
+
+.age-number{
+  position:absolute;
+  font-size:(@D/6) * 2; // To hơn cây nến 1.5 lần
+  font-weight:900;
+  font-family: 'Signika', 'Arial Black', 'Impact', sans-serif;
+  color:rgb(204, 207, 22);
+  text-shadow: 
+    3px 3px 6px rgba(0,0,0,0.7),
+    0 0 10px rgba(255,255,255,0.3);
+  top:50%;
+  margin-top:-@D/13; // Hơi trên cây nến một chút
+  line-height:1;
+  z-index:20;
+  letter-spacing:2px;
+  transform:translateY(-50%);
+}
+
+.age-left{
+  left:50%;
+  margin-left:-(@D/2)/20 - (@D/2)/7.5; // Gần nhau hơn
+  transform:translateX(-100%) translateY(-50%);
+}
+
+.age-right{
+  left:50%;
+  margin-left:-(@D/2)/20 + (@D/2)/20 + (@D/2)/7.5; // Gần nhau hơn một chút
+  transform:translateX(0) translateY(-50%);
+}
+
 /* ============================================== Fire
 */
 
